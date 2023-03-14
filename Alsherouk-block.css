@@ -1,0 +1,63 @@
+.Welcome{
+    text-align: center;
+}
+
+body{
+    background-color: aqua;
+}
+
+table{
+    border: 20px;
+    border-color: blueviolet;
+}
+
+#firstlinetable{
+    background-color: aqua;
+}
+
+table,td,tr,th{
+    border: solid black;
+}
+
+.Input1,#Submit{
+    display: inline-block;
+}
+
+.Input2,#Submit{
+    display: inline-block;
+}
+
+.Input3,#Submit3{
+display: inline-block;
+}
+
+.Input4,#Submit4{
+display: inline-block;
+}
+
+.Input5,#Submit5{
+    display: inline-block;
+}
+
+.Input6,#Submit6{
+    display: inline-block;
+}
+
+.Input7,#Submit7{
+    display: inline-block;
+}
+
+.Input8,#Submit8{
+    display: inline-block;
+}
+
+.Input9,#Submit9{
+    display: inline-block;
+}
+
+.Input10,#Submit10{
+    display: inline-block;
+}
+.Input1,.Input2,.Input3,.Input4,.Input5,.Input6,.Input7,.Input8,.Input9,.Input10{
+    width: 100px;
+}
