@@ -4,7 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>أذكار المسلم</title>
-  <link rel="stylesheet" href="index_files/index.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  text: bold;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.zekr,.channels, .broadcasting_menu, #radioContainer{
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button, .azkar_net, .azkaralmoslembot, .creator, .creator_button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 1em 0;
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#radioFrame{
+  border: black solid 2px;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -22,14 +94,24 @@
       <div class="zekr">
         <center>
           <h4>أذكار الصباح</h4>
-          <button onclick="morning_azkar()"><a href="https://t.me/azkaralmoslembot" class="azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
+          <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار الصباح <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot" class="azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
           <button><a class="" href="morning_azkar.html">قرآءة اونلاين</a></button>
         </center>
       </div>
       <div class="zekr">
         <h3>أذكار المساء</h3>
-        <button onclick="evening_azkar()"><a href="https://t.me/azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار المساء <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
         <button><a href="evening_azkar">قراءة اونلاين</a></button>
+      </div>
+      <div class="zekr">
+        <h3>أذكار ما قبل النوم</h3>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار النوم <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot">قراءة من البوت</a></button>
+        <button><a href="sleeping_azkar.html">قراءة اونلاين</a></button>
+      </div>
+      <div class="zekr">
+        <h3>أذكار الاستيقاظ</h3>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار النوم <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot">قراءة من البوت</a></button>
+        <button><a href="wakingup_azkar.html">قراءة اونلاين</a></button>
       </div>
     </section>
     <section id=broadcasting_menu>
@@ -61,6 +143,8 @@
     <p>جميع الحقوق محفوظة &copy; 2024</p>
   </footer>
 
-  <script src="index_files/index.js"></script>
+  <script>
+    function showRadio(url) {document.getElementById('radioFrame').src = url;}
+  </script>
 </body>
 </html>
