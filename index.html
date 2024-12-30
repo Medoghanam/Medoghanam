@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>« أَذْكَارُ المُسْلِم »</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  text: bold;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.zekr,.channels, .broadcasting_menu, #radioContainer{
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button, .azkar_net, .azkaralmoslembot, .creator, .creator_button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 1em 0;
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#radioFrame{
+  border: black solid 2px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>أذكار المسلم ويب</h1>
+    <nav>
+      <a href="#azkar_menu">قائمة الأذكار</a>
+      <a href="#broadcasting_menu">إذاعات الشيوخ</a>
+      <a href="#channels">قنواتنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="azkar_menu">
+      <h2>قائمة الأذكار</h2>
+      <div class="zekr">
+        <center>
+          <h4>أذكار الصباح</h4>
+          <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار الصباح <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot" class="azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
+          <button><a class="" href="morning_azkar.html">قرآءة اونلاين</a></button>
+        </center>
+      </div>
+      <div class="zekr">
+        <h3>أذكار المساء</h3>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار المساء <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot" target="_blank">قراءة من البوت</a></button>
+        <button><a href="evening_azkar">قراءة اونلاين</a></button>
+      </div>
+      <div class="zekr">
+        <h3>أذكار ما قبل النوم</h3>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار النوم <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot">قراءة من البوت</a></button>
+        <button><a href="sleeping_azkar.html">قراءة اونلاين</a></button>
+      </div>
+      <div class="zekr">
+        <h3>أذكار الاستيقاظ</h3>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار النوم <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot">قراءة من البوت</a></button>
+        <button><a href="wakingup_azkar.html">قراءة اونلاين</a></button>
+      </div>
+    </section>
+    <section id=broadcasting_menu>
+      <h2>قائمة إذاعات الشيوخ</h2>
+      <div class="broadcasting_menu">
+        <h3>اضغط علي اسم الشيخ</h3>
+        <button onclick="showRadio('https://backup.qurango.net/radio/maher');">ماهر المعيقلي</button>
+      </div>
+      <div id="radioContainer">
+        <h4>اختر شيخ لعرض البث المباشر</h4>
+        <iframe id="radioFrame" src="choose_qaree.html" frameborder="1" allow="autoplay"></iframe>
+    </div>
+    </section>
+    <section id="channels">
+      <h2>قنواتنا وطرق التواصل معنا</h2>
+      <div class="channels">
+        
+        <div>
+          <button><a href="https://t.me/azkar_net" class="azkar_net" target="_blank"target="_blank">« قَنَاةُ أَذْكَارُ المُسْلِم »</a></button>
+          <button><a href="https://t.me/azkaralmoslembot" class="azkaralmoslembot" target="_blank">« بوت أَذْكَارُ المُسْلِم »</a></button>
+        </div>
+        <div>
+          <button class="cretor_button"><a href="https://t.me/midoghanam" class="creator" target="_blank">المؤسس</a></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2024</p>
+  </footer>
+
+  <script>
+    function showRadio(url){alert('يرجي الانتظار حتي تتم عملية التحميل'); document.getElementById('radioFrame').src = url;}
+  </script>
+</body>
+</html>
