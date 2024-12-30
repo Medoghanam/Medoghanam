@@ -32,7 +32,7 @@ h2 {
   color: #007bff;
 }
 
-.zekr,.channels, .broadcasting_menu{
+.zekr,.channels, .broadcasting_menu, #radioContainer{
   margin: 15px 0;
   padding: 10px;
   border: 1px solid #ddd;
@@ -64,4 +64,8 @@ footer {
 a{
   text-decoration: none;
   color: white;
+}
+
+#radioFrame{
+  border: black solid 2px;
 }
