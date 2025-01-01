@@ -6,80 +6,76 @@
   <title>«أَذْكَارُ المُسْلِم»</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-  text: bold;
-}
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text: bold;
+    }
 
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 1em 0;
-}
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1em 0;
+    }
 
-header h1 {
-  margin: 0;
-}
+    header h1 {
+      margin: 0;
+    }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
 
-main {
-  padding: 20px;
-}
+    main {
+      padding: 20px;
+    }
 
-h2 {
-  color: #007bff;
-}
+    h2 {
+      color: #007bff;
+    }
 
-.zekr,.channels, .broadcasting_menu, #radioContainer{
-  margin: 15px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-}
+    .zekr, .channels, .broadcasting_menu, #radioContainer {
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+    }
 
-button, .azkar_net, .azkaralmoslembot, .creator, .creator_button{
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    button, .azkar_net, .azkaralmoslembot, .creator, .creator_button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-button:hover {
-  background-color: #0056b3;
-}
+    button:hover {
+      background-color: #0056b3;
+    }
 
-footer {
-  background-color: #007bff;
-  color: white;
-  padding: 1em 0;
-  margin-top: 20px;
-}
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 1em 0;
+      margin-top: 20px;
+    }
 
-a{
-  text-decoration: none;
-  color: white;
-}
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
-#radioFrame{
-  border: black solid 2px;
-}
-
-#hr{
-  border: black solid 1px;
-}
+    #hr {
+      border: black solid 1px;
+    }
   </style>
 </head>
 <body dir="rtl">
@@ -92,6 +88,7 @@ a{
       <br>
       <a href="about_us.html">عنَّا</a>
       <a href="about_us.html#contact">تواصل معنا</a>
+      <a href="donate_to_azkaralmoslem_website.html">ادعمنا</a>
     </nav>
   </header>
 
@@ -108,7 +105,7 @@ a{
       <div class="zekr">
         <h3>أذكار المساء</h3>
         <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار المساء <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot?start=start" target="_blank">قراءة من البوت</a></button>
-        <button><a href="evening_azkar">قراءة اونلاين</a></button>
+        <button><a href="evening_azkar.html">قراءة اونلاين</a></button>
       </div>
       <div class="zekr">
         <h3>أذكار ما قبل النوم</h3>
@@ -117,11 +114,11 @@ a{
       </div>
       <div class="zekr">
         <h3>أذكار الاستيقاظ</h3>
-        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار النوم <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot?start=start">قراءة من البوت</a></button>
+        <button onclick="alert('سيتم تحويلك الآن للبوت\nللقراءة\n/start-> أذكار الاستيقاظ <- أذكار المسلم ')"><a href="https://t.me/azkaralmoslembot?start=start">قراءة من البوت</a></button>
         <button><a href="wakingup_azkar.html">قراءة اونلاين</a></button>
       </div>
     </section>
-    <section id=broadcasting_menu>
+    <section id="broadcasting_menu">
       <h2>قائمة الإذاعات</h2>
       <div class="broadcasting_menu">
         <h3>اختر الإذاعة</h3>
@@ -136,25 +133,26 @@ a{
         <hr id="hr">
         <button onclick="showRadio('https://n0a.radiojar.com/8s5u5tpdtwzuv?rj-ttl=5&rj-tok=AAABlBbxRVYAUuGJhc_1zxdlgQ')">اذاعة القرآن الكريم بالقاهرة</button>
         <button onclick="showRadio('https://backup.qurango.net/radio/salma')">تلاوات خاشعة</button>
-       <br>
+        <br>
         <button onclick="showRadio('https://backup.qurango.net/radio/roqiah')">الرقية الشرعية</button>
         <button onclick="showRadio('https://backup.qurango.net/radio/mukhtasartafsir')">المختصر في تفسير القرآن</button>
+        <br>
+        <h4 id="broadcast_menu_p">اختر شيخ من القائمة اعلاه</h4>
+        <audio controls id="radioFrame">
+          <source src="" type="audio/mpeg" id="radioSource">
+            متصفحك لا يدعم تشغيل الملفات الصوتية.
+        </audio>
       </div>
-      <div id="radioContainer">
-        <h4>البث المباشر:-</h4>
-        <iframe id="radioFrame" src="choose_broadcast.html" frameborder="1" allow="autoplay"></iframe>
-    </div>
     </section>
     <section id="channels">
       <h2>قنواتنا وطرق التواصل معنا</h2>
       <div class="channels">
-        
         <div>
-          <button><a href="https://t.me/azkar_net" class="azkar_net" target="_blank"target="_blank">« قَنَاةُ أَذْكَارُ المُسْلِم »</a></button>
+          <button><a href="https://t.me/azkar_net" class="azkar_net" target="_blank">« قَنَاةُ أَذْكَارُ المُسْلِم »</a></button>
           <button><a href="https://t.me/azkaralmoslembot?start=start" class="azkaralmoslembot" target="_blank">« بوت أَذْكَارُ المُسْلِم »</a></button>
         </div>
         <div>
-          <button class="cretor_button"><a href="https://t.me/midoghanam" class="creator" target="_blank">المؤسس والمبرمج</a></button>
+          <button class="creator_button"><a href="https://t.me/midoghanam" class="creator" target="_blank">المؤسس والمبرمج</a></button>
         </div>
       </div>
     </section>
@@ -165,7 +163,14 @@ a{
   </footer>
 
   <script>
-    function showRadio(url){alert('يرجي الانتظار حتي تتم عملية التحميل'); document.getElementById('radioFrame').src = url;}
+    function showRadio(url) {
+      alert('يرجي الانتظار حتي تتم عملية التحميل');
+      document.getElementById('radioSource').src = url;
+      const audio = document.getElementById('radioFrame');
+      audio.load();
+      audio.play();
+      document.getElementById('broadcast_menu_p').textContent = "تم تشغيل الشيخ بنجاح"
+    }
   </script>
 </body>
 </html>
